@@ -7,4 +7,5 @@ class CheckValues
   static bool partsListDone = false;
   static bool technicalSketchDone = false;
   static bool billOfMaterialsDone = false;
+  static bool radialArmSawDone = false;
 }

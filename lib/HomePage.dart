@@ -49,7 +49,7 @@ String getTitle(Step s)
     case Step.Step4:
       return "4: Technical Sketch";
     case Step.Step5:
-      return "Step5";
+      return "5: Identify your Bill of Materials";
     case Step.Step6:
       return "Step6";
     case Step.Step7:

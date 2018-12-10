@@ -32,7 +32,7 @@ import 'package:woods1_stool/Steps/Step27.dart';
 enum Step{Intro,
   Step1, Step2, Step3, Step4, Step5, Step6, Step7, Step8, Step9,
   Step10, Step11, Step12, Step13, Step14, Step15, Step16, Step17, Step18, Step19,
-  Step20, Step21, Step22, Step23, Step24, Step25, Step26, Step27}
+  Step20, Step21, Step22, Step23}
 
 String getTitle(Step s)
 {
@@ -61,39 +61,31 @@ String getTitle(Step s)
     case Step.Step10:
       return "10: Compound Miter Saw";
     case Step.Step11:
-      return "Step11";
+      return "11: Table Saw";
     case Step.Step12:
-      return "Step12";
+      return "12: Glue Top/Legs";
     case Step.Step13:
-      return "Step13";
+      return "13: Band Saw";
     case Step.Step14:
-      return "Step14";
+      return "14: Sanders";
     case Step.Step15:
-      return "Step15";
+      return "15: Router";
     case Step.Step16:
-      return "Step16";
+      return "16: Laser Engrave";
     case Step.Step17:
-      return "Step17";
+      return "17: Drill Press";
     case Step.Step18:
-      return "Step18";
+      return "18: Attach Pieces";
     case Step.Step19:
-      return "Step19";
+      return "19: Final Sanding";
     case Step.Step20:
-      return "Step20";
+      return "20: Apply Finish";
     case Step.Step21:
-      return "Step21";
+      return "21: Apply your name";
     case Step.Step22:
-      return "Step22";
+      return "22: Self Reflection";
     case Step.Step23:
-      return "Step23";
-    case Step.Step24:
-      return "Step24";
-    case Step.Step25:
-      return "Step25";
-    case Step.Step26:
-      return "Step26";
-    case Step.Step27:
-      return "Step27";
+      return "23: Set up your portfolio portion";
   }
 }
 
@@ -153,14 +145,6 @@ Widget getPage(Step s)
         return Step22Page();
       case Step.Step23:
         return Step23Page();
-      case Step.Step24:
-        return Step24Page();
-      case Step.Step25:
-        return Step25Page();
-      case Step.Step26:
-        return Step26Page();
-      case Step.Step27:
-        return Step27Page();
   }
   return null;
 }
@@ -245,10 +229,6 @@ class HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             Step21Page(),
             Step22Page(),
             Step23Page(),
-            Step24Page(),
-            Step25Page(),
-            Step26Page(),
-            Step27Page(),
           ])
     );
   }

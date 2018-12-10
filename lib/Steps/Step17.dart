@@ -16,7 +16,13 @@ class Step17PageState extends State
   
   @override
   Widget build(BuildContext context) {
-    return Text("Step 1!");
+    return ListView(
+      children: <Widget>[
+        ExpansionTile(children: <Widget>[],),
+        ExpansionTile(children: <Widget>[ListTile()],),
+        ExpansionTile(children: <Widget>[],),
+      ],
+    );
   }
   
 }

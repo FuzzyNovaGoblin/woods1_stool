@@ -53,11 +53,11 @@ String getTitle(Step s)
     case Step.Step6:
       return "6: Radial Arm Saw";
     case Step.Step7:
-      return "7: ";
+      return "7: Surface Planer";
     case Step.Step8:
-      return "8: ";
+      return "8: Jointer";
     case Step.Step9:
-      return "9: ";
+      return "9: Layout Board";
     case Step.Step10:
       return "Step10";
     case Step.Step11:

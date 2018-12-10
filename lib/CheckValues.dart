@@ -11,4 +11,5 @@ class CheckValues
   static bool surfacePlanerDone = false;
   static bool jointerDone = false;
   static bool layoutBoardDone = false;
+  static bool compoundMiterSawDone = false;
 }

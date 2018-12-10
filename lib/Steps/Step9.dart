@@ -34,7 +34,7 @@ class Step9PageState extends State
         CheckboxListTile(
           activeColor: Colors.green,
           value: CheckValues.layoutBoardDone,
-          title: Text(CheckValues.layoutBoardDone?"Pie Is Power":"Complete Parts List"),
+          title: Text(CheckValues.layoutBoardDone?"Pie Is Power":"Done Laying out board"),
           onChanged: (bool value)=>setState(()=>CheckValues.layoutBoardDone = !CheckValues.layoutBoardDone),
         )
       ],

@@ -26,7 +26,7 @@ class Step7PageState extends State
         CheckboxListTile(
           activeColor: Colors.green,
           value: CheckValues.surfacePlanerDone,
-          title: Text(CheckValues.surfacePlanerDone?"Pie Is Power":"Complete Parts List"),
+          title: Text(CheckValues.surfacePlanerDone?"Pie Is Power":"Use Surface Planer"),
           onChanged: (bool value)=>setState(()=>CheckValues.surfacePlanerDone = !CheckValues.surfacePlanerDone),
         )
       ],

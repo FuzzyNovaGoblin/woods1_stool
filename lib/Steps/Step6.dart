@@ -41,7 +41,7 @@ class Step6PageState extends State
         CheckboxListTile(
           activeColor: Colors.green,
           value: CheckValues.radialArmSawDone,
-          title: Text(CheckValues.radialArmSawDone?"Pie Is Power":"Complete Parts List"),
+          title: Text(CheckValues.radialArmSawDone?"Pie Is Power":"Use Radial Arm Saw"),
           onChanged: (bool value)=>setState(()=>CheckValues.radialArmSawDone = !CheckValues.radialArmSawDone),
         )
       ],

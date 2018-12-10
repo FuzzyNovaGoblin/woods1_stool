@@ -27,7 +27,7 @@ class Step8PageState extends State
         CheckboxListTile(
           activeColor: Colors.green,
           value: CheckValues.jointerDone,
-          title: Text(CheckValues.jointerDone?"Pie Is Power":"Complete Parts List"),
+          title: Text(CheckValues.jointerDone?"Pie Is Power":"Use Jointer"),
           onChanged: (bool value)=>setState(()=>CheckValues.jointerDone = !CheckValues.jointerDone),
         )
       ]

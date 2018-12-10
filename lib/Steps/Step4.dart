@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:woods1_stool/CheckValues.dart';
 import 'AbstractStepPage.dart';
 
 class Step4Page extends StatefulWidget
@@ -37,7 +38,12 @@ class Step4PageState extends State
           ],),
         ],
         ),
-        
+        CheckboxListTile(
+          activeColor: Colors.green,
+          value: CheckValues.technicalSketchDone,
+          title: Text(CheckValues.technicalSketchDone?"Pie Is Power":"Complete Technical Sketch"),
+          onChanged: (bool value)=>setState(()=>CheckValues.technicalSketchDone = !CheckValues.technicalSketchDone),
+        )
       ],
     );
   }

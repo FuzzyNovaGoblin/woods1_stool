@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:woods1_stool/CheckValues.dart';
 import 'AbstractStepPage.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -85,12 +86,22 @@ class Step5PageState extends State
   
     //part 4
         ListTile(title: Text("-Calculate your Rough lumber board foot the same way you did the finished lumber section.", style: Theme.of(context).textTheme.display1,)),
-        ExpansionTile(title: Text("-Calculate your waist", style: Theme.of(context).textTheme.display2,),
+        ExpansionTile(title: Text("-Calculate your waist", style: Theme.of(context).textTheme.display1,),
         children: <Widget>[
-          ListTile(title: Text("-Subtract the Rough lumber total cost from the finished lumber total cost.", style: Theme.of(context).textTheme.display3,)),
-          ListTile(title: Text("-Try and see if you can figure out what the percent of waste is…", style: Theme.of(context).textTheme.display3,)),
-        ],)
+          ListTile(title: Text("-Subtract the Rough lumber total cost from the finished lumber total cost.", style: Theme.of(context).textTheme.display2,)),
+          ListTile(title: Text("-Try and see if you can figure out what the percent of waste is…", style: Theme.of(context).textTheme.display2,)),
+        ],),
       
+        
+        //checkbox
+
+        CheckboxListTile(
+          activeColor: Colors.green,
+          value: CheckValues.billOfMaterialsDone,
+          title: Text(CheckValues.billOfMaterialsDone?"Pie Is Power":"Complete Bill Of Materials"),
+          onChanged: (bool value)=>setState(()=>CheckValues.billOfMaterialsDone = !CheckValues.billOfMaterialsDone),
+        )
+        
       ],
     );
   }

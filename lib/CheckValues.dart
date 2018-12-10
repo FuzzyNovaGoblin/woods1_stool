@@ -6,4 +6,5 @@ class CheckValues
   static bool threeDimImageDone = false;
   static bool partsListDone = false;
   static bool technicalSketchDone = false;
+  static bool billOfMaterialsDone = false;
 }

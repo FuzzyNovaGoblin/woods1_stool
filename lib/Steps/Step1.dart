@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:woods1_stool/CheckValues.dart';
 import 'AbstractStepPage.dart';
 
 class Step1Page extends StatefulWidget
@@ -13,8 +14,6 @@ class Step1Page extends StatefulWidget
 
 class Step1PageState extends State
 {
-  
-  bool sketchesDone = false;
   
   @override
   Widget build(BuildContext context) {
@@ -36,9 +35,9 @@ class Step1PageState extends State
         ),
         CheckboxListTile(
           activeColor: Colors.green,
-          value: sketchesDone,
-          title: Text(sketchesDone?"Pie Is Power":""),
-          onChanged: (bool value)=>setState(()=>sketchesDone = !sketchesDone),
+          value: CheckValues.sketchesDone,
+          title: Text(CheckValues.sketchesDone?"Pie Is Power":""),
+          onChanged: (bool value)=>setState(()=>CheckValues.sketchesDone = !CheckValues.sketchesDone),
         )
       ],
     );

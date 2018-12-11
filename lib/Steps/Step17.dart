@@ -17,6 +17,8 @@ class Step17PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        //TODO  add check boxes inbetween each of these bigger sections
+
         //part 1
         ExpansionTile(title: Text("Blind Hole/Counter Sink", style: Theme.of(context).textTheme.title,) ,children: <Widget>[
           ExpansionTile(title: Text("-Create a counter sink/blind hole for the screw to sit in ", style: Theme.of(context).textTheme.display1,),

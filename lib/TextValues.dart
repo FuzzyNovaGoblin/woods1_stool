@@ -7,6 +7,6 @@ class TextValues extends TextTheme
     display1:TextStyle(fontSize: 20.0, color: Colors.black),
     display2:TextStyle(fontSize: 15.0, color: Colors.black),
     display3:TextStyle(fontSize: 13.0, color: Colors.black),
-    display4:TextStyle(fontSize: 10.0, color: Colors.black),
+    display4:TextStyle(fontSize: 11.0, color: Colors.black,fontWeight: FontWeight.normal),
   );
 }

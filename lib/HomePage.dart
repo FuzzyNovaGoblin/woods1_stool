@@ -24,10 +24,6 @@ import 'package:woods1_stool/Steps/Step20.dart';
 import 'package:woods1_stool/Steps/Step21.dart';
 import 'package:woods1_stool/Steps/Step22.dart';
 import 'package:woods1_stool/Steps/Step23.dart';
-import 'package:woods1_stool/Steps/Step24.dart';
-import 'package:woods1_stool/Steps/Step25.dart';
-import 'package:woods1_stool/Steps/Step26.dart';
-import 'package:woods1_stool/Steps/Step27.dart';
 
 enum Step{Intro,
   Step1, Step2, Step3, Step4, Step5, Step6, Step7, Step8, Step9,

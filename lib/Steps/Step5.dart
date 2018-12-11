@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:woods1_stool/CheckValues.dart';
+import 'package:woods1_stool/TextValues.dart';
 import 'AbstractStepPage.dart';
 import 'package:url_launcher/url_launcher.dart';
 

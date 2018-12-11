@@ -14,14 +14,12 @@ class Step17Page extends StatefulWidget
 class Step17PageState extends State
 {
   
+  
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: <Widget>[
-        ExpansionTile(children: <Widget>[],),
-        ExpansionTile(children: <Widget>[ListTile()],),
-        ExpansionTile(children: <Widget>[],),
-      ],
+    return FittedBox(
+      fit: BoxFit.fitWidth,
+      child: Text(" This has been Done\non another machine"),
     );
   }
   

@@ -16,7 +16,10 @@ class Step18PageState extends State
   
   @override
   Widget build(BuildContext context) {
-    return Text("Step 1!");
+    return FittedBox(
+      fit: BoxFit.fitWidth,
+      child: Text(" This has been Done\non another machine"),
+    );
   }
   
 }

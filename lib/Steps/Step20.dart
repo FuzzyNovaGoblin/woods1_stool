@@ -23,7 +23,8 @@ class Step20PageState extends State
         children: <Widget>[
           ListTile(title: Text("-Suggestion to put finishing nails onto a board so the board can sit on it while drying and not get stuck to anything on table, ect.", style: Theme.of(context).textTheme.display2))
         ],),
-        Placeholder(),
+        Image.asset("assets/IMG_0138.JPG"),
+        Image.asset("assets/IMG_0137.JPG"),
         CheckboxListTile(
           activeColor: Colors.green,
           value: CheckValues.finishDone,

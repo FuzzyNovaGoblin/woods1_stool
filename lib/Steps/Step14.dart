@@ -21,6 +21,7 @@ class Step14PageState extends State
       children: <Widget>[
         ListTile(title: Text("-Sand the pieces you have so they can be assembled", style: Theme.of(context).textTheme.display1)),
         ListTile(title: Text("-Choose the proper sander for the proper job", style: Theme.of(context).textTheme.display1)),
+        Image.asset("assets/IMG_0134.JPG"),
         CheckboxListTile(
           activeColor: Colors.green,
           value: CheckValues.sandersDone,

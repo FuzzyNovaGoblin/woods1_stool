@@ -22,7 +22,7 @@ class Step19PageState extends State
           children: <Widget>[
             ListTile(title: Text("-That means you should have sanded up the highest sandpaper", style: Theme.of(context).textTheme.display2))
           ],),
-        Placeholder(),
+        Image.asset("assets/IMG_0131.JPG"),
         CheckboxListTile(
           activeColor: Colors.green,
           value: CheckValues.finalSandingDone,

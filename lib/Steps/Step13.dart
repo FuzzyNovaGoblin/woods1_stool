@@ -33,6 +33,14 @@ class Step13PageState extends State
             ListTile(title: Text("-Mark which side of the rail goes with which side of the leg for ease on knowing where the two pieces fit best.", style: Theme.of(context).textTheme.display3))
           ],),
         ],),
+        //TODO finish pictures on slide 22
+        ExpansionTile(title: Text("", style: Theme.of(context).textTheme.display1,),
+        children: <Widget>[Image.asset("assets/")],),
+        ExpansionTile(title: Text("", style: Theme.of(context).textTheme.display1,),
+        children: <Widget>[Image.asset("assets/")],),
+        ExpansionTile(title: Text("", style: Theme.of(context).textTheme.display1,),
+        children: <Widget>[Image.asset("assets/")],),
+        Placeholder(),//TODO add image
         CheckboxListTile(
           activeColor: Colors.green,
           value: CheckValues.bandSawDone,

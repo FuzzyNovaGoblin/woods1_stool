@@ -32,6 +32,7 @@ class Step5PageState extends State
         //part 1
         ExpansionTile(title: Text("-The bill of materials includes:", style: Theme.of(context).textTheme.display1,),
         children: <Widget>[
+          Image.asset("assets/6.PNG"),
           ExpansionTile(title: Text("-A list of Materials/tools needed", style: Theme.of(context).textTheme.display2,),
           children: <Widget>[
             ExpansionTile(title: Text("-This includes:", style: Theme.of(context).textTheme.display3,),
@@ -46,6 +47,7 @@ class Step5PageState extends State
 
         ExpansionTile(title: Text("-Board Foot Calculation of Wood needed (includes costs)", style: Theme.of(context).textTheme.display1,),
           children: <Widget>[
+            RotatedBox(child: Image.asset("assets/8.PNG"),quarterTurns: 3,),
             ExpansionTile(title: Text("-To complete your board foot calculation you will need your parts list for the wood you need only (this doesn’t include the one for screws, ect.)", style: Theme.of(context).textTheme.display2,),
               children: <Widget>[
                 ExpansionTile(title: Text.rich( TextSpan(text: "-First calculate the board foot for what your finished pieces would be. ",children: [TextSpan(text: "Round UP to second decimal place!", style: TextStyle(fontWeight: FontWeight.bold))]), style: Theme.of(context).textTheme.display3,),
@@ -74,6 +76,7 @@ class Step5PageState extends State
         //part 3
         ExpansionTile(title: Text("-Now you would need to create a board layout on paper to do the next part", style: Theme.of(context).textTheme.display1,),
         children: <Widget>[
+          Image.asset("assets/7.PNG"),
           ListTile(title: Text("-In order to do this you need to go find a board and get a common width (just in case it isn’t there when you get to cut, there will be a board the same size around for you to use)", style: Theme.of(context).textTheme.display2,)),
           ExpansionTile(title: Text("-Draw out a board and figure out how long the board will need to be for you to use", style: Theme.of(context).textTheme.display2,),
           children: <Widget>[

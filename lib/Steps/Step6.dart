@@ -19,10 +19,17 @@ class Step6PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
-        ListTile(title: Text("-After lesson on radial arm saw take radial arm saw test", style: Theme.of(context).textTheme.display1),),
+        ExpansionTile(title: Text("-After lesson on radial arm saw take radial arm saw test", style: Theme.of(context).textTheme.display1),
+        children: <Widget>[
+          //TODO add radial arm saw picture
+          Placeholder(),
+//          Image.asset("assets/"),
+        ],),
         ExpansionTile(title: Text("Next Step", style: Theme.of(context).textTheme.display1),
         children: <Widget>[
           ListTile(title: Text("-Measure out the board you chose ", style: Theme.of(context).textTheme.display2)),
+          Image.asset("assets/IMG_0047.JPG"),
+          Image.asset("assets/IMG_0048.JPG"),
           ExpansionTile(title: Text("-Set up board on machine", style: Theme.of(context).textTheme.display2),
           children: <Widget>[
             ExpansionTile(title: Text("-Pay attention to distortions", style: Theme.of(context).textTheme.display3),

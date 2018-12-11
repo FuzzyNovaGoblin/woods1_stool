@@ -20,7 +20,15 @@ class Step15PageState extends State
     return ListView(
       children: <Widget>[
         ListTile(title: Text("-Router the edge(s) you need", style: Theme.of(context).textTheme.display1)),
-        Placeholder(),
+        FittedBox(
+          fit: BoxFit.fitWidth,
+          child: Row(
+            children: <Widget>[
+              Image.asset("assets/IMG_0135.JPG"),
+              Image.asset("assets/IMG_0136.JPG"),
+            ],
+          ),
+        ),
         CheckboxListTile(
           activeColor: Colors.green,
           value: CheckValues.routerDone,

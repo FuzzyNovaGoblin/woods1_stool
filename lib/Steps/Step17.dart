@@ -41,7 +41,9 @@ class Step17PageState extends State
 
         //part 2
         ExpansionTile(title: Text("Layout out Board – Find Center Points", style: Theme.of(context).textTheme.title,),children: <Widget>[
-          Placeholder(color: Colors.deepPurpleAccent,)
+          Image.asset("assets/IMG_0094.JPG"),
+          Image.asset("assets/IMG_0098.JPG"),
+          Image.asset("assets/IMG_0100.JPG"),
         ],),
 
         //part 3
@@ -50,8 +52,11 @@ class Step17PageState extends State
             ListTile(title: Text("-Attain a plug the size of the hole you drilled for your counter sink/blind hole", style: Theme.of(context).textTheme.display1,),),
             ExpansionTile(title: Text("-Drill only the depth of the hole you created", style: Theme.of(context).textTheme.display1,),
             children: <Widget>[
-              ListTile(title: Text("-You will need 8 total (4 per rail x 2 rails)", style: Theme.of(context).textTheme.display1,))
-            ],)
+              ListTile(title: Text("-You will need 8 total (4 per rail x 2 rails)", style: Theme.of(context).textTheme.display1,)),
+              Image.asset("assets/IMG_0111.JPG"),
+              Padding(padding: EdgeInsets.all(8.0),)
+            ],),
+            Image.asset("assets/IMG_0158.JPG"),
           ],),
       ],
     );

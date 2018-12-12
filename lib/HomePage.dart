@@ -195,6 +195,93 @@ class HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
 
     ss = ()=>setState(() {});
 
+    int c = 0;
+    int getNum() => c++;
+
+//      print("hello?");
+//      precacheImage(AssetImage("assets/10.PNG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/11.PNG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/1.PNG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/2.PNG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/3.PNG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/4.PNG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/5.PNG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/6.PNG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/7.PNG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/8.PNG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/9.PNG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/brainstorm-sketch.jpg"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0047.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0048.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0049.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0094.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0096.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0097.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0098.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0099.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0100.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0106.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0107.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0108.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0109.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0111.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0112.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0113.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0114.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0115.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0116.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0117.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0118.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0119.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0120.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0121.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0122.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0123.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0124.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0125.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0126.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0127.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0128.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0129.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0130.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0131.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0132.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0133.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0134.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0135.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0136.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0137.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0138.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0139.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0140.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0141.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0142.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0143.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0144.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0145.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0146.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0147.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0148.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0149.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0150.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0151.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0152.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0153.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0154.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0155.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0156.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0157.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0158.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0159.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0161.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0162.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0163.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0164.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0165.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0166.JPG"), context).then((_)=>print(getNum()));
+//      precacheImage(AssetImage("assets/IMG_0167.JPG"), context).then((_)=>print(getNum()));
+
+
     return Scaffold(
       appBar: AppBar(title: Text(getTitle(Step.values[tabController.index])),),
       drawer: drawer,
@@ -228,7 +315,6 @@ class HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           ])
     );
   }
-  
 }
 
 

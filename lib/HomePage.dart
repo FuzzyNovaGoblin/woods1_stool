@@ -148,7 +148,7 @@ Widget getPage(Step s)
 class HomePage extends StatefulWidget
 {
   Step step = Step.Intro;
-  StepPage stepPage;
+//  StepPage stepPage;
   
 //  HomePage(){stepPage = getPage(step);}
   

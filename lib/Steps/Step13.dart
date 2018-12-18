@@ -35,11 +35,11 @@ class Step13PageState extends State
         ],),
         //TODO finish pictures on slide 22
         ExpansionTile(title: Text("-Mark the board with your rail", style: Theme.of(context).textTheme.display1,),
-        children: <Widget>[Image.asset("assets/IMG_0107.JPG")],),
+        children: <Widget>[ImageThing("assets/IMG_0107.JPG")],),
         ExpansionTile(title: Text("-Cut out sections and lable the parts", style: Theme.of(context).textTheme.display1,),
-        children: <Widget>[Image.asset("assets/IMG_0106.JPG")],),
+        children: <Widget>[ImageThing("assets/IMG_0106.JPG")],),
         ExpansionTile(title: Text("-Match Labeled parts for when assembling", style: Theme.of(context).textTheme.display1,),
-        children: <Widget>[Image.asset("assets/IMG_0108.JPG"),Image.asset("assets/IMG_0109.JPG"),],),
+        children: <Widget>[ImageThing("assets/IMG_0108.JPG"),ImageThing("assets/IMG_0109.JPG"),],),
         Placeholder(),//TODO add image
         CheckboxListTile(
           activeColor: Colors.green,

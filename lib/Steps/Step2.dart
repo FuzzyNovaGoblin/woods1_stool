@@ -32,7 +32,7 @@ class Step2PageState extends State
               ListTile(title: Text("-Annotations: images, text (explanations), and DIMENSIONS are needed ", style: Theme.of(context).textTheme.display2),),
             ],
           ),
-          Image.asset("assets/3.PNG"),
+          ImageThing("assets/3.PNG"),
           CheckboxListTile(
             activeColor: Colors.green,
             value: CheckValues.threeDimImageDone,

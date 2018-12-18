@@ -22,8 +22,7 @@ class Step7PageState extends State
         ExpansionTile(title: Text("-Use the surface planer to create two surfaced faces", style: Theme.of(context).textTheme.display1),
         children: <Widget>[
           ListTile(title: Text("-Be sure to check distortions to make sure you are placing the board in correctly", style: Theme.of(context).textTheme.display2)),
-          //TODO add surface planner image
-          Placeholder(),
+          ImageThing("assets/surface planer.jpg"),
         ],),
         CheckboxListTile(
           activeColor: Colors.green,

@@ -22,7 +22,7 @@ class Step4PageState extends State
         ListTile(title: Text("-A technical Sketch shows the intricate details of a product",style: Theme.of(context).textTheme.display1),),
         ExpansionTile(title: Text("-To do this we use three different 2D images called the Top, Front, Right and position it in a L formation",style: Theme.of(context).textTheme.display1),
         children: <Widget>[
-          Image.asset("assets/5.PNG"),
+          ImageThing("assets/5.PNG"),
           ExpansionTile(title: Text("-The L formation is where the top is aligned above the front and the right side view is aligned to the right of the front view.",style: Theme.of(context).textTheme.display2),
           children: <Widget>[
             ListTile(title: Text("-A top view is a birds eye view of the product",style: Theme.of(context).textTheme.display3)),

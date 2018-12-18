@@ -24,7 +24,7 @@ class Step1PageState extends State
         ExpansionTile(
           title: Text("-You need 10 sketches", style: Theme.of(context).textTheme.display1),
           children: <Widget>[
-            Image.asset("assets/brainstorm-sketch.jpg"),
+            ImageThing("assets/brainstorm-sketch.jpg"),
             ExpansionTile(title: Text("-Each sketch must display the top, front, and side of the stool", style: Theme.of(context).textTheme.display2,),
               children: <Widget>[
                 ListTile(title: Text("-You have the choice between a top, front, right view to equal one sketch or 1 3D stool sketch.", style: Theme.of(context).textTheme.display3),),

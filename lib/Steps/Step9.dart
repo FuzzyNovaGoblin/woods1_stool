@@ -31,7 +31,7 @@ class Step9PageState extends State
             ],),
           ],),
         ],),
-        Image.asset("assets/IMG_0049.JPG"),
+        ImageThing("assets/IMG_0049.JPG"),
         CheckboxListTile(
           activeColor: Colors.green,
           value: CheckValues.layoutBoardDone,

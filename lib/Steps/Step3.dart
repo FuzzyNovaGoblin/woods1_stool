@@ -47,7 +47,7 @@ class Step3PageState extends State
             ListTile(title: Text("-Such as screws and plugs", style: Theme.of(context).textTheme.display2)),
           ],
         ),
-        Image.asset("assets/4.PNG"),
+        ImageThing("assets/4.PNG"),
         CheckboxListTile(
           activeColor: Colors.green,
           value: CheckValues.partsListDone,

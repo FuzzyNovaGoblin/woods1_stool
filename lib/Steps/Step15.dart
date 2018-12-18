@@ -24,8 +24,8 @@ class Step15PageState extends State
           fit: BoxFit.fitWidth,
           child: Row(
             children: <Widget>[
-              Image.asset("assets/IMG_0135.JPG"),
-              Image.asset("assets/IMG_0136.JPG"),
+              ImageThing("assets/IMG_0135.JPG"),
+              ImageThing("assets/IMG_0136.JPG"),
             ],
           ),
         ),

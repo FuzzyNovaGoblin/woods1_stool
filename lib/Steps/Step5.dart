@@ -47,7 +47,7 @@ class Step5PageState extends State
 
         ExpansionTile(title: Text("-Board Foot Calculation of Wood needed (includes costs)", style: Theme.of(context).textTheme.display1,),
           children: <Widget>[
-            RotatedBox(child: ImageThing("assets/8.PNG"),quarterTurns: 3,),
+            RotatedBox(child: ImageThing("assets/bill2-3.PNG"),quarterTurns: 3,),
             ExpansionTile(title: Text("-To complete your board foot calculation you will need your parts list for the wood you need only (this doesn’t include the one for screws, ect.)", style: Theme.of(context).textTheme.display2,),
               children: <Widget>[
                 ExpansionTile(title: Text.rich( TextSpan(text: "-First calculate the board foot for what your finished pieces would be. ",children: [TextSpan(text: "Round UP to second decimal place!", style: TextStyle(fontWeight: FontWeight.bold))]), style: Theme.of(context).textTheme.display3,),
@@ -94,6 +94,7 @@ class Step5PageState extends State
         children: <Widget>[
           ListTile(title: Text("-Subtract the Rough lumber total cost from the finished lumber total cost.", style: Theme.of(context).textTheme.display2,)),
           ListTile(title: Text("-Try and see if you can figure out what the percent of waste is…", style: Theme.of(context).textTheme.display2,)),
+          RotatedBox(child: ImageThing("assets/bill4-4"), quarterTurns: 3,),
         ],),
       
         

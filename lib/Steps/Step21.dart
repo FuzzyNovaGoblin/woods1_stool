@@ -31,7 +31,7 @@ class Step21PageState extends State
             ListTile(title: Text("-Pen", style: Theme.of(context).textTheme.display2)),
           ],)
         ],),
-        Placeholder(),
+        ImageThing("assets/cropedName.JPG"),
         CheckboxListTile(
           activeColor: Colors.green,
           value: CheckValues.addNameDone,

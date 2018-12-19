@@ -51,7 +51,7 @@ class Step18PageState extends State
         //part 4
         ExpansionTile(title: Text("Attach Top to stand", style: Theme.of(context).textTheme.display1,),
         children: <Widget>[
-          Placeholder()
+          ImageThing("assets/IMG_0133.JPG"),
         ],),
 
 

@@ -40,7 +40,7 @@ class Step13PageState extends State
         children: <Widget>[ImageThing("assets/IMG_0106.JPG")],),
         ExpansionTile(title: Text("-Match Labeled parts for when assembling", style: Theme.of(context).textTheme.display1,),
         children: <Widget>[ImageThing("assets/IMG_0108.JPG"),ImageThing("assets/IMG_0109.JPG"),],),
-        Placeholder(),//TODO add image
+        ImageThing("assets/band saw.jpg"),
         CheckboxListTile(
           activeColor: Colors.green,
           value: CheckValues.bandSawDone,

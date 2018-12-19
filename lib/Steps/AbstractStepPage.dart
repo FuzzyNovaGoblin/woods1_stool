@@ -14,7 +14,7 @@ class ImageThing extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
         children: <Widget>[
-          Padding(padding: EdgeInsets.all(8.0), child: CircularProgressIndicator()), ImageThing(location),
+          Center(child: Padding(padding: EdgeInsets.all(8.0), child: CircularProgressIndicator())), Center(child: Image.asset(location)),
         ]
     );
   }

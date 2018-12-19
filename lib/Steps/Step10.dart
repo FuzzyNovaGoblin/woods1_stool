@@ -20,7 +20,7 @@ class Step10PageState extends State
     return ListView(
       children: <Widget>[
         ListTile(title: Text("-Cross cut your pieces on the compound miter saw", style: Theme.of(context).textTheme.display1)),
-        Placeholder(),//TODO add miter saw image
+        ImageThing("assets/miter saw.jpg"),
         ListTile(title: Text("-Be sure to check distortions and where the surfaced edge is", style: Theme.of(context).textTheme.display1)),
         ExpansionTile(title: Text("-Cut your pieces", style: Theme.of(context).textTheme.display1),
         children: <Widget>[

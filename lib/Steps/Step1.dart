@@ -19,6 +19,7 @@ class Step1PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.sketchesDone),
         ListTile(title: Text("-Brainstorm sketches", style: Theme.of(context).textTheme.display1),),
         ListTile(title: Text("-You can change the color, the arch style, the top iamge/style but not change the dimensions or structure of the stool.", style: Theme.of(context).textTheme.display1,),),
         ExpansionTile(
@@ -33,12 +34,13 @@ class Step1PageState extends State
             )
           ],
         ),
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.sketchesDone,
-          title: Text(CheckValues.sketchesDone?"Pie Is Power":""),
-          onChanged: (bool value)=>setState(()=>CheckValues.sketchesDone = !CheckValues.sketchesDone),
-        )
+
+//        CheckboxListTile(
+//          activeColor: Colors.green,
+//          value: CheckValues.sketchesDone,
+//          title: Text(CheckValues.sketchesDone?"Pie Is Power":""),
+//          onChanged: (bool value)=>setState(()=>CheckValues.sketchesDone = !CheckValues.sketchesDone),
+//        )
       ],
     );
   }

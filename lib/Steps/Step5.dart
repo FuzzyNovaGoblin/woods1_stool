@@ -29,6 +29,7 @@ class Step5PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.billOfMaterialsDone),
         //part 1
         ExpansionTile(title: Text("-The bill of materials includes:", style: Theme.of(context).textTheme.display1,),
         children: <Widget>[
@@ -100,12 +101,6 @@ class Step5PageState extends State
         
         //checkbox
 
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.billOfMaterialsDone,
-          title: Text(CheckValues.billOfMaterialsDone?"Pie Is Power":"Complete Bill Of Materials"),
-          onChanged: (bool value)=>setState(()=>CheckValues.billOfMaterialsDone = !CheckValues.billOfMaterialsDone),
-        )
         
       ],
     );

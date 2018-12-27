@@ -19,17 +19,12 @@ class Step7PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.surfacePlanerDone),
         ExpansionTile(title: Text("-Use the surface planer to create two surfaced faces", style: Theme.of(context).textTheme.display1),
         children: <Widget>[
           ListTile(title: Text("-Be sure to check distortions to make sure you are placing the board in correctly", style: Theme.of(context).textTheme.display2)),
           ImageThing("assets/surface planer.jpg"),
         ],),
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.surfacePlanerDone,
-          title: Text(CheckValues.surfacePlanerDone?"Pie Is Power":"Use Surface Planer"),
-          onChanged: (bool value)=>setState(()=>CheckValues.surfacePlanerDone = !CheckValues.surfacePlanerDone),
-        )
       ],
     );
   }

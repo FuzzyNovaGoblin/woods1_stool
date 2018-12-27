@@ -19,6 +19,7 @@ class Step6PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.radialArmSawDone),
         ExpansionTile(title: Text("-After lesson on radial arm saw take radial arm saw test", style: Theme.of(context).textTheme.display1),
         children: <Widget>[
           ImageThing("assets/radial arm saw.jpg"),
@@ -43,12 +44,6 @@ class Step6PageState extends State
           ListTile(title: Text("-Return blade", style: Theme.of(context).textTheme.display2)),
           ListTile(title: Text("-Turn machine off – wait for complete stop", style: Theme.of(context).textTheme.display2)),
         ],),
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.radialArmSawDone,
-          title: Text(CheckValues.radialArmSawDone?"Pie Is Power":"Use Radial Arm Saw"),
-          onChanged: (bool value)=>setState(()=>CheckValues.radialArmSawDone = !CheckValues.radialArmSawDone),
-        )
       ],
     );
   }

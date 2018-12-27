@@ -19,17 +19,13 @@ class Step11PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.tableSawDone),
         ExpansionTile(title: Text("-Use Table saw to rip pieces ", style: Theme.of(context).textTheme.display1),
         children: <Widget>[
           ListTile(title: Text("-You can also use table saw to cross cut sections that are to small for the compound miter saw, but that is only if a sled is used. (otherwise use bandsaw)", style: Theme.of(context).textTheme.display2))
         ],),
         ImageThing("assets/IMG_0028.JPG"),
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.tableSawDone,
-          title: Text(CheckValues.tableSawDone?"Pie Is Power":"Used Table Saw"),
-          onChanged: (bool value)=>setState(()=>CheckValues.tableSawDone = !CheckValues.tableSawDone),
-        )
+        
       ],
     );
   }

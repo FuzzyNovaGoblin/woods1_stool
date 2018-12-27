@@ -19,6 +19,7 @@ class Step10PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.compoundMiterSawDone),
         ListTile(title: Text("-Cross cut your pieces on the compound miter saw", style: Theme.of(context).textTheme.display1)),
         ImageThing("assets/miter saw.jpg"),
         ListTile(title: Text("-Be sure to check distortions and where the surfaced edge is", style: Theme.of(context).textTheme.display1)),
@@ -34,12 +35,7 @@ class Step10PageState extends State
         children: <Widget>[
           ListTile(title: Text("-Make sure your name is all over each piece", style: Theme.of(context).textTheme.display2))
         ],),
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.compoundMiterSawDone,
-          title: Text(CheckValues.compoundMiterSawDone?"Pie Is Power":"Complete Miter Saw"),
-          onChanged: (bool value)=>setState(()=>CheckValues.compoundMiterSawDone = !CheckValues.compoundMiterSawDone),
-        )
+        
       ],
     );
   }

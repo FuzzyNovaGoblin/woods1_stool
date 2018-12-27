@@ -19,6 +19,7 @@ class Step9PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.layoutBoardDone),
         ExpansionTile(title: Text("-Layout your pieces/parts onto the surfaced board", style: Theme.of(context).textTheme.display1),
         children: <Widget>[
           ListTile(title: Text("-Be sure to include the 1/8” spaces between pieces (for the blade’s cut)", style: Theme.of(context).textTheme.display2)),
@@ -32,12 +33,7 @@ class Step9PageState extends State
           ],),
         ],),
         ImageThing("assets/IMG_0049.JPG"),
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.layoutBoardDone,
-          title: Text(CheckValues.layoutBoardDone?"Pie Is Power":"Done Laying out board"),
-          onChanged: (bool value)=>setState(()=>CheckValues.layoutBoardDone = !CheckValues.layoutBoardDone),
-        )
+        
       ],
     );
   }

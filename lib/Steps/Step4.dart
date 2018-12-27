@@ -19,6 +19,7 @@ class Step4PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.technicalSketchDone),
         ListTile(title: Text("-A technical Sketch shows the intricate details of a product",style: Theme.of(context).textTheme.display1),),
         ExpansionTile(title: Text("-To do this we use three different 2D images called the Top, Front, Right and position it in a L formation",style: Theme.of(context).textTheme.display1),
         children: <Widget>[
@@ -39,12 +40,6 @@ class Step4PageState extends State
           ],),
         ],
         ),
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.technicalSketchDone,
-          title: Text(CheckValues.technicalSketchDone?"Pie Is Power":"Complete Technical Sketch"),
-          onChanged: (bool value)=>setState(()=>CheckValues.technicalSketchDone = !CheckValues.technicalSketchDone),
-        )
       ],
     );
   }

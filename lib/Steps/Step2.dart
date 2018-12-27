@@ -21,6 +21,7 @@ class Step2PageState extends State
   {
     return ListView(
         children: <Widget>[
+          CheckBoxThing(checkValue: CheckValue.threeDimImageDone),
           ListTile(title: Text("-Create a 3D image of your final design", style: Theme.of(context).textTheme.display1)),
           ExpansionTile(title: Text("-Create a Top, Front, Right of your final design", style: Theme.of(context).textTheme.display1),
             children: <Widget>[
@@ -33,12 +34,6 @@ class Step2PageState extends State
             ],
           ),
           ImageThing("assets/3.PNG"),
-          CheckboxListTile(
-            activeColor: Colors.green,
-            value: CheckValues.threeDimImageDone,
-            title: Text(CheckValues.threeDimImageDone?"Pie Is Power":"Complete 3D Image"),
-            onChanged: (bool value)=>setState(()=>CheckValues.threeDimImageDone = !CheckValues.threeDimImageDone),
-          )
         ]);
   }
   

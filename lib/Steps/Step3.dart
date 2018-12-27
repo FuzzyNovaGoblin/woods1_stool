@@ -19,6 +19,7 @@ class Step3PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.partsListDone),
         ListTile(
           title: Text("-Create a parts list of the required materials needed",style: Theme.of(context).textTheme.display1),
         ),
@@ -48,12 +49,6 @@ class Step3PageState extends State
           ],
         ),
         ImageThing("assets/4.PNG"),
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.partsListDone,
-          title: Text(CheckValues.partsListDone?"Pie Is Power":"Complete Parts List"),
-          onChanged: (bool value)=>setState(()=>CheckValues.partsListDone = !CheckValues.partsListDone),
-        )
       ],
     );
   }

@@ -1,7 +1,4 @@
-
-
-class CheckValues
-{
+class CheckValues {
   static bool sketchesDone = false;
   static bool threeDimImageDone = false;
   static bool partsListDone = false;
@@ -25,4 +22,30 @@ class CheckValues
   static bool addNameDone = false;
   static bool reflectionDone = false;
   static bool portfolioDone = false;
+}
+
+enum CheckValue {
+  sketchesDone,
+  threeDimImageDone,
+  partsListDone,
+  technicalSketchDone,
+  billOfMaterialsDone,
+  radialArmSawDone,
+  surfacePlanerDone,
+  jointerDone,
+  layoutBoardDone,
+  compoundMiterSawDone,
+  tableSawDone,
+  glueDone,
+  bandSawDone,
+  sandersDone,
+  routerDone,
+  laserEngraverDone,
+  drillPressDone,
+  attachPiecesDone,
+  finalSandingDone,
+  finishDone,
+  addNameDone,
+  reflectionDone,
+  portfolioDone,
 }

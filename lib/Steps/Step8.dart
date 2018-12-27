@@ -19,18 +19,14 @@ class Step8PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children:[
+        CheckBoxThing(checkValue: CheckValue.jointerDone),
         ListTile(title: Text("-Joint 1 edge", style: Theme.of(context).textTheme.display1)),
         ExpansionTile(title: Text("-Only joint one edge!", style: Theme.of(context).textTheme.display1),
         children: <Widget>[
           ListTile(title: Text("-the other edge will be cleaned when using the table saw to create a square board", style: Theme.of(context).textTheme.display2)),
         ],),
         ImageThing("assets/IMG_0021.JPG"),
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.jointerDone,
-          title: Text(CheckValues.jointerDone?"Pie Is Power":"Use Jointer"),
-          onChanged: (bool value)=>setState(()=>CheckValues.jointerDone = !CheckValues.jointerDone),
-        )
+        
       ]
     );
   }

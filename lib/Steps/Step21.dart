@@ -19,6 +19,7 @@ class Step21PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.addNameDone),
         ListTile(title: Text("-Put your name on your project – take responsibility for your work", style: Theme.of(context).textTheme.display1)),
         ExpansionTile(title: Text("-Options:", style: Theme.of(context).textTheme.display1),
         children: <Widget>[
@@ -32,12 +33,7 @@ class Step21PageState extends State
           ],)
         ],),
         ImageThing("assets/cropedName.JPG"),
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.addNameDone,
-          title: Text(CheckValues.addNameDone?"Pie Is Power":"Add your name"),
-          onChanged: (bool value)=>setState(()=>CheckValues.addNameDone = !CheckValues.addNameDone),
-        )
+        
       ],
     );
   }

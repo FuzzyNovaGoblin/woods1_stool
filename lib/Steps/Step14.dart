@@ -19,15 +19,11 @@ class Step14PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.sandersDone),
         ListTile(title: Text("-Sand the pieces you have so they can be assembled", style: Theme.of(context).textTheme.display1)),
         ListTile(title: Text("-Choose the proper sander for the proper job", style: Theme.of(context).textTheme.display1)),
         ImageThing("assets/IMG_0134.JPG"),
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.sandersDone,
-          title: Text(CheckValues.sandersDone?"Pie Is Power":"Complete Parts List"),
-          onChanged: (bool value)=>setState(()=>CheckValues.sandersDone = !CheckValues.sandersDone),
-        )
+        
       ],
     );
   }

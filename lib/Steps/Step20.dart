@@ -19,18 +19,14 @@ class Step20PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.finishDone),
         ExpansionTile(title: Text("-Required Polyurethane", style: Theme.of(context).textTheme.display1),
         children: <Widget>[
           ListTile(title: Text("-Suggestion to put finishing nails onto a board so the board can sit on it while drying and not get stuck to anything on table, ect.", style: Theme.of(context).textTheme.display2))
         ],),
         ImageThing("assets/IMG_0138.JPG"),
         ImageThing("assets/IMG_0137.JPG"),
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.finishDone,
-          title: Text(CheckValues.finishDone?"Pie Is Power":"Apply Finish"),
-          onChanged: (bool value)=>setState(()=>CheckValues.finishDone = !CheckValues.finishDone),
-        )
+        
       ],
     );
   }

@@ -19,6 +19,7 @@ class Step15PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.routerDone),
         ListTile(title: Text("-Router the edge(s) you need", style: Theme.of(context).textTheme.display1)),
         FittedBox(
           fit: BoxFit.fitWidth,
@@ -29,12 +30,7 @@ class Step15PageState extends State
             ],
           ),
         ),
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.routerDone,
-          title: Text(CheckValues.routerDone?"Pie Is Power":"Complete Parts List"),
-          onChanged: (bool value)=>setState(()=>CheckValues.routerDone = !CheckValues.routerDone),
-        )
+        
       ],
     );
   }

@@ -19,6 +19,7 @@ class Step13PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.bandSawDone),
         ExpansionTile(title: Text("-Cut out design of legs on bandsaw", style: Theme.of(context).textTheme.display1),
         children: <Widget>[
           ExpansionTile(title: Text("-Reminder: Grain orientation plays a large role here!", style: Theme.of(context).textTheme.display2),
@@ -41,12 +42,7 @@ class Step13PageState extends State
         ExpansionTile(title: Text("-Match Labeled parts for when assembling", style: Theme.of(context).textTheme.display1,),
         children: <Widget>[ImageThing("assets/IMG_0108.JPG"),ImageThing("assets/IMG_0109.JPG"),],),
         ImageThing("assets/band saw.jpg"),
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.bandSawDone,
-          title: Text(CheckValues.bandSawDone?"Pie Is Power":"Complete Parts List"),
-          onChanged: (bool value)=>setState(()=>CheckValues.bandSawDone = !CheckValues.bandSawDone),
-        )
+        
       ],
     );
   }

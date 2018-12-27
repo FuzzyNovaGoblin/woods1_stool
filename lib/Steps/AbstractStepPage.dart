@@ -94,12 +94,20 @@ class CheckBoxThing extends StatefulWidget {
         text = "Used Laser Engraver";
         value = CheckValues.laserEngraverDone;
         break;
-      case CheckValue.drillPressDone:
-        text = "";
-        value = CheckValues.drillPressDone;
+      case CheckValue.drillPressDone_blindHole:
+        text = "Finished BlindHole/Counter Sink";
+        value = CheckValues.drillPressDone_blindHole;
+        break;
+      case CheckValue.drillPressDone_layout:
+        text = "Found Center Points";
+        value = CheckValues.drillPressDone_layout;
+        break;
+      case CheckValue.drillPressDone_plugs:
+        text = "Completed Plugs";
+        value = CheckValues.drillPressDone_plugs;
         break;
       case CheckValue.attachPiecesDone:
-        text = "";
+        text = "Attatched Pices";
         value = CheckValues.attachPiecesDone;
         break;
       case CheckValue.finalSandingDone:
@@ -136,10 +144,16 @@ class _CheckBoxThingState extends State<CheckBoxThing> {
   @override
   Widget build(BuildContext context) {
     return CheckboxListTile(
-      value: widget.value,
-      onChanged: (bool value) {setState((){widget.value = !widget.value;});},
+      value: CheckValues.getBool(widget.checkValue),
+      onChanged: (bool value) {
+        setState((){
+          CheckValues.setVal(v:!CheckValues.getBool(widget.checkValue),checkValue: widget.checkValue);
+          CheckValues.printValues();
+          CheckValues.saveData();
+        });
+        },
       activeColor: Colors.green,
-      title: Text(widget.text, style: TextStyle(color: widget.value? Colors.green : Colors.red),
+      title: Text(widget.text, style: TextStyle(color: CheckValues.getBool(widget.checkValue)? Colors.green : Colors.red),
       ),
     );
   }

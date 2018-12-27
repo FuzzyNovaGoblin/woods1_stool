@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:woods1_stool/CheckValues.dart';
 import 'AbstractStepPage.dart';
 
 class Step18Page extends StatefulWidget
@@ -19,6 +20,7 @@ class Step18PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.attachPiecesDone),
         //part 1
         ExpansionTile(title: Text("Attach cleats to Rails", style: Theme.of(context).textTheme.display1,),
           children: <Widget>[

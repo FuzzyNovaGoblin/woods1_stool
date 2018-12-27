@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:woods1_stool/TextValues.dart';
 import 'HomePage.dart';
+import 'package:woods1_stool/CheckValues.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  CheckValues.readData();
+  runApp(MyApp());
+}
 
 
 class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context) =>
-      MaterialApp(
-          home: HomePage(),
-          theme: ThemeData(textTheme: TextValues())
-      );
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: HomePage(),
+        theme: ThemeData(textTheme: TextValues())
+    );
+  }
 }
 
 

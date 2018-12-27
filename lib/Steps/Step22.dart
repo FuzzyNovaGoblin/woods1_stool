@@ -19,6 +19,7 @@ class Step22PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.reflectionDone),
         ExpansionTile(title: Text("-Self Reflect on your progress with the provided project rubric", style: Theme.of(context).textTheme.display1),
         children: <Widget>[
           ListTile(title: Text("-Circle what you think you deserve – READ IT Carefully!", style: Theme.of(context).textTheme.display2)),
@@ -28,12 +29,7 @@ class Step22PageState extends State
         children: <Widget>[
           ListTile(title: Text("-Follow teacher direction", style: Theme.of(context).textTheme.display2)),
         ],),
-        CheckboxListTile(
-          activeColor: Colors.green,
-          value: CheckValues.reflectionDone,
-          title: Text(CheckValues.reflectionDone?"Pie Is Power":"Completed Self Reflection"),
-          onChanged: (bool value)=>setState(()=>CheckValues.reflectionDone = !CheckValues.reflectionDone),
-        )
+        
       ],
     );
   }

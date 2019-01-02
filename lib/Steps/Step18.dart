@@ -35,7 +35,7 @@ class Step18PageState extends State
         ExpansionTile(title: Text("Attach rails to legs", style: Theme.of(context).textTheme.display1,), children: <Widget>[
           ExpansionTile(title: Text("-Use Vice to hold leg allowing me to have downward force when drilling", style: Theme.of(context).textTheme.display2,), children: <Widget>[ImageThing("assets/IMG_0148.JPG")]),
           ExpansionTile(title: Text("-Be sure you hold make sure leg is lined up evenly with edges", style: Theme.of(context).textTheme.display2,), children: <Widget>[ImageThing("assets/IMG_0154.JPG")],),
-          ExpansionTile(title:  Text("IDK what you want???", style: TextStyle(color: Colors.red),), children: <Widget>[Placeholder(),Placeholder()],),
+//          ExpansionTile(title:  Text("IDK what you want???", style: TextStyle(color: Colors.red),), children: <Widget>[Placeholder(),Placeholder()],),
         ],),
 
         //part 3

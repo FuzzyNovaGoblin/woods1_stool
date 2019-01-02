@@ -3,8 +3,8 @@ import 'package:woods1_stool/TextValues.dart';
 import 'HomePage.dart';
 import 'package:woods1_stool/CheckValues.dart';
 
-void main() {
-  CheckValues.readData();
+void main() async{
+  await CheckValues.readData();
   runApp(MyApp());
 }
 

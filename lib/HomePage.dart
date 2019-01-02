@@ -211,7 +211,6 @@ class HomePageState extends State<HomePage>
         }
       }),
     );
-    print('lastPage: ' + CheckValues.lastPage.toString());
     tabController.index = CheckValues.lastPage;
   }
   

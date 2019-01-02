@@ -19,6 +19,7 @@ class Step13PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.bandSawTest),
         CheckBoxThing(checkValue: CheckValue.bandSawDone),
         ExpansionTile(title: Text("-Cut out design of legs on bandsaw", style: Theme.of(context).textTheme.display1),
         children: <Widget>[
@@ -34,7 +35,6 @@ class Step13PageState extends State
             ListTile(title: Text("-Mark which side of the rail goes with which side of the leg for ease on knowing where the two pieces fit best.", style: Theme.of(context).textTheme.display3))
           ],),
         ],),
-        //TODO finish pictures on slide 22
         ExpansionTile(title: Text("-Mark the board with your rail", style: Theme.of(context).textTheme.display1,),
         children: <Widget>[ImageThing("assets/IMG_0107.JPG")],),
         ExpansionTile(title: Text("-Cut out sections and lable the parts", style: Theme.of(context).textTheme.display1,),

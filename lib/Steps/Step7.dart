@@ -19,6 +19,7 @@ class Step7PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.surFacePlanerTest),
         CheckBoxThing(checkValue: CheckValue.surfacePlanerDone),
         ExpansionTile(title: Text("-Use the surface planer to create two surfaced faces", style: Theme.of(context).textTheme.display1),
         children: <Widget>[

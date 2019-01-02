@@ -19,6 +19,7 @@ class Step8PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children:[
+        CheckBoxThing(checkValue: CheckValue.jointerTest),
         CheckBoxThing(checkValue: CheckValue.jointerDone),
         ListTile(title: Text("-Joint 1 edge", style: Theme.of(context).textTheme.display1)),
         ExpansionTile(title: Text("-Only joint one edge!", style: Theme.of(context).textTheme.display1),

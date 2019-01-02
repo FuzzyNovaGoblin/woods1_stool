@@ -19,6 +19,7 @@ class Step15PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.routerTest),
         CheckBoxThing(checkValue: CheckValue.routerDone),
         ListTile(title: Text("-Router the edge(s) you need", style: Theme.of(context).textTheme.display1)),
         FittedBox(

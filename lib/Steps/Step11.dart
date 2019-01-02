@@ -19,6 +19,7 @@ class Step11PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.tableSawTest),
         CheckBoxThing(checkValue: CheckValue.tableSawDone),
         ExpansionTile(title: Text("-Use Table saw to rip pieces ", style: Theme.of(context).textTheme.display1),
         children: <Widget>[

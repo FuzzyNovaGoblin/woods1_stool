@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:woods1_stool/CheckValues.dart';
 import 'package:woods1_stool/Steps/AbstractStepPage.dart';
 import 'package:woods1_stool/Steps/Intro.dart';
 import 'package:woods1_stool/Steps/Step1.dart';
@@ -25,15 +26,35 @@ import 'package:woods1_stool/Steps/Step21.dart';
 import 'package:woods1_stool/Steps/Step22.dart';
 import 'package:woods1_stool/Steps/Step23.dart';
 
-enum Step{Intro,
-  Step1, Step2, Step3, Step4, Step5, Step6, Step7, Step8, Step9,
-  Step10, Step11, Step12, Step13, Step14, Step15, Step16, Step17, Step18, Step19,
-  Step20, Step21, Step22, Step23}
+enum Step {
+  Intro,
+  Step1,
+  Step2,
+  Step3,
+  Step4,
+  Step5,
+  Step6,
+  Step7,
+  Step8,
+  Step9,
+  Step10,
+  Step11,
+  Step12,
+  Step13,
+  Step14,
+  Step15,
+  Step16,
+  Step17,
+  Step18,
+  Step19,
+  Step20,
+  Step21,
+  Step22,
+  Step23
+}
 
-String getTitle(Step s)
-{
-  switch(s)
-  {
+String getTitle(Step s) {
+  switch (s) {
     case Step.Intro:
       return "Intro";
     case Step.Step1:
@@ -88,113 +109,116 @@ String getTitle(Step s)
 VoidCallback ss;
 
 
-Widget getPage(Step s)
-{
-  switch(s)
-  {
+Widget getPage(Step s) {
+  switch (s) {
     case Step.Intro:
       return IntroPage();
     case Step.Step1:
       return Step1Page();
     case Step.Step2:
       return Step2Page();
-
+    
     case Step.Step3:
       return Step3Page();
-      case Step.Step4:
-        return Step4Page();
-      case Step.Step5:
-        return Step5Page();
-      case Step.Step6:
-        return Step6Page();
-      case Step.Step7:
-        return Step7Page();
-      case Step.Step8:
-        return Step8Page();
-      case Step.Step9:
-        return Step9Page();
-      case Step.Step10:
-        return Step10Page();
-      case Step.Step11:
-        return Step11Page();
-      case Step.Step12:
-        return Step12Page();
-      case Step.Step13:
-        return Step13Page();
-      case Step.Step14:
-        return Step14Page();
-      case Step.Step15:
-        return Step15Page();
-      case Step.Step16:
-        return Step16Page();
-      case Step.Step17:
-        return Step17Page();
-      case Step.Step18:
-        return Step18Page();
-      case Step.Step19:
-        return Step19Page();
-      case Step.Step20:
-        return Step20Page();
-      case Step.Step21:
-        return Step21Page();
-      case Step.Step22:
-        return Step22Page();
-      case Step.Step23:
-        return Step23Page();
+    case Step.Step4:
+      return Step4Page();
+    case Step.Step5:
+      return Step5Page();
+    case Step.Step6:
+      return Step6Page();
+    case Step.Step7:
+      return Step7Page();
+    case Step.Step8:
+      return Step8Page();
+    case Step.Step9:
+      return Step9Page();
+    case Step.Step10:
+      return Step10Page();
+    case Step.Step11:
+      return Step11Page();
+    case Step.Step12:
+      return Step12Page();
+    case Step.Step13:
+      return Step13Page();
+    case Step.Step14:
+      return Step14Page();
+    case Step.Step15:
+      return Step15Page();
+    case Step.Step16:
+      return Step16Page();
+    case Step.Step17:
+      return Step17Page();
+    case Step.Step18:
+      return Step18Page();
+    case Step.Step19:
+      return Step19Page();
+    case Step.Step20:
+      return Step20Page();
+    case Step.Step21:
+      return Step21Page();
+    case Step.Step22:
+      return Step22Page();
+    case Step.Step23:
+      return Step23Page();
   }
   return null;
 }
 
-class HomePage extends StatefulWidget
-{
+class HomePage extends StatefulWidget {
   Step step = Step.Intro;
+
 //  StepPage stepPage;
-  
+
 //  HomePage(){stepPage = getPage(step);}
   
   @override
   State<StatefulWidget> createState() {
-     return HomePageState();
+    return HomePageState();
   }
 }
 
-class HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
-{
+class HomePageState extends State<HomePage>
+    with SingleTickerProviderStateMixin {
   
   TabController tabController;
   
   Drawer drawer;
-
-
+  
+  
   @override
   void initState() {
     super.initState();
-    tabController = TabController(length: Step.values.length, vsync: this,)..addListener(()=>ss());
-
-
+    tabController = TabController(length: Step.values.length, vsync: this,)
+      ..addListener(() {
+        CheckValues.changeLstPage(tabController.index);
+        ss();
+      });
+    
+    
     drawer = Drawer(
-      child: ListView.builder(itemBuilder: (context, i){
-        if(i < Step.values.length)
-        {
+      child: ListView.builder(itemBuilder: (context, i) {
+        if (i < Step.values.length) {
           return ListTile(
-            title: Text(getTitle(Step.values[i]),style: TextStyle(fontSize: 30.0),),
-            onTap: (){
+            title: Text(getTitle(Step.values[i]), style: TextStyle(fontSize: 30.0),),
+            onTap: () {
               tabController.index = i;
+              CheckValues.changeLstPage(i);
               Navigator.of(context).pop();
               ss();
-              },
+            },
             //decoration: BoxDecoration(color: Colors.blueAccent),
           );
         }
       }),
     );
+    print('lastPage: ' + CheckValues.lastPage.toString());
+    tabController.index = CheckValues.lastPage;
   }
-
+  
   @override
   Widget build(BuildContext context) {
-
-    ss = ()=>setState(() {});
-
+    ss = () => setState(() {});
+    
     int c = 0;
     int getNum() => c++;
 
@@ -280,39 +304,39 @@ class HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
 //      precacheImage(AssetImage("assets/IMG_0165.JPG"), context).then((_)=>print(getNum()));
 //      precacheImage(AssetImage("assets/IMG_0166.JPG"), context).then((_)=>print(getNum()));
 //      precacheImage(AssetImage("assets/IMG_0167.JPG"), context).then((_)=>print(getNum()));
-
-
+    
+    
     return Scaffold(
-      appBar: AppBar(title: Text(getTitle(Step.values[tabController.index])),),
-      drawer: drawer,
-      body: TabBarView(
-          controller: tabController,
-          children: [
-            IntroPage(),
-            Step1Page(),
-            Step2Page(),
-            Step3Page(),
-            Step4Page(),
-            Step5Page(),
-            Step6Page(),
-            Step7Page(),
-            Step8Page(),
-            Step9Page(),
-            Step10Page(),
-            Step11Page(),
-            Step12Page(),
-            Step13Page(),
-            Step14Page(),
-            Step15Page(),
-            Step16Page(),
-            Step17Page(),
-            Step18Page(),
-            Step19Page(),
-            Step20Page(),
-            Step21Page(),
-            Step22Page(),
-            Step23Page(),
-          ])
+        appBar: AppBar(title: Text(getTitle(Step.values[tabController.index])),),
+        drawer: drawer,
+        body: TabBarView(
+            controller: tabController,
+            children: [
+              IntroPage(),
+              Step1Page(),
+              Step2Page(),
+              Step3Page(),
+              Step4Page(),
+              Step5Page(),
+              Step6Page(),
+              Step7Page(),
+              Step8Page(),
+              Step9Page(),
+              Step10Page(),
+              Step11Page(),
+              Step12Page(),
+              Step13Page(),
+              Step14Page(),
+              Step15Page(),
+              Step16Page(),
+              Step17Page(),
+              Step18Page(),
+              Step19Page(),
+              Step20Page(),
+              Step21Page(),
+              Step22Page(),
+              Step23Page(),
+            ])
     );
   }
 }

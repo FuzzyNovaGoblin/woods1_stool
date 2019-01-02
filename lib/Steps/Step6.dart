@@ -19,6 +19,7 @@ class Step6PageState extends State
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        CheckBoxThing(checkValue: CheckValue.radialArmSawTest),
         CheckBoxThing(checkValue: CheckValue.radialArmSawDone),
         ExpansionTile(title: Text("-After lesson on radial arm saw take radial arm saw test", style: Theme.of(context).textTheme.display1),
         children: <Widget>[

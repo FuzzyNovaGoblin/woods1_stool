@@ -130,6 +130,46 @@ class CheckBoxThing extends StatefulWidget {
         text = "Completed Portfolio";
         value = CheckValues.portfolioDone;
         break;
+        
+      case CheckValue.radialArmSawTest:
+        text = "Passed Radial Arm Saw Test";
+        value = CheckValues.radialArmSawTest;
+        break;
+      case CheckValue.compoundMiterSawTest:
+        text = "Passed Compound Miter Saw Test";
+        value = CheckValues.compoundMiterSawTest;
+        break;
+      case CheckValue.surFacePlanerTest:
+        text = "Passed Surface Planer Test";
+        value = CheckValues.surFacePlanerTest;
+        break;
+      case CheckValue.jointerTest:
+        text = "Passed Jointer Test";
+        value = CheckValues.jointerTest;
+        break;
+      case CheckValue.tableSawTest:
+        text = "Passed Table Saw Test";
+        value = CheckValues.tableSawTest;
+        break;
+      case CheckValue.sandersTest:
+        text = "Passed Sanders Test";
+        value = CheckValues.sandersTest;
+        break;
+      case CheckValue.routerTest:
+        text = "Passed Router Test";
+        value = CheckValues.routerTest;
+        break;
+  
+  
+      case CheckValue.bandSawTest:
+        text = "Passed Band Saw Test";
+        value = CheckValues.bandSawTest;
+        break;
+      case CheckValue.drillPressTest:
+        text = "Passed Drill Press Test";
+        value = CheckValues.drillPressTest;
+        break;
+      
     }
   }
   

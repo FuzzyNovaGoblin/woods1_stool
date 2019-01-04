@@ -14,7 +14,7 @@ class IntroPageState extends State
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Column(
+      child: ListView(
         children: <Widget>[
           Text("What is it?", style: TextStyle(fontSize: 30.0),),
           RichText(

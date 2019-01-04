@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "Woods 1",
         home: HomePage(),
         theme: ThemeData(textTheme: TextValues())
     );

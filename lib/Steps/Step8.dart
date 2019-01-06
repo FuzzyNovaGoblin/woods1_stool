@@ -26,7 +26,7 @@ class Step8PageState extends State
         children: <Widget>[
           ListTile(title: Text("-the other edge will be cleaned when using the table saw to create a square board", style: Theme.of(context).textTheme.display2)),
         ],),
-        ImageThing("assets/IMG_0021.JPG"),
+        ImageThing("assets/IMG_0021.jpg"),
         
       ]
     );

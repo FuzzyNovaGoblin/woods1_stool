@@ -23,7 +23,7 @@ class Step19PageState extends State
           children: <Widget>[
             ListTile(title: Text("-That means you should have sanded up the highest sandpaper", style: Theme.of(context).textTheme.display2))
           ],),
-        ImageThing("assets/IMG_0131.JPG"),
+        ImageThing("assets/IMG_0131.jpg"),
         
       ],
     );

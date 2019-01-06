@@ -28,8 +28,8 @@ class Step6PageState extends State
         ExpansionTile(title: Text("Next Step", style: Theme.of(context).textTheme.display1),
         children: <Widget>[
           ListTile(title: Text("-Measure out the board you chose ", style: Theme.of(context).textTheme.display2)),
-          ImageThing("assets/IMG_0047.JPG"),
-          ImageThing("assets/IMG_0048.JPG"),
+          ImageThing("assets/IMG_0047.jpg"),
+          ImageThing("assets/IMG_0048.jpg"),
           ExpansionTile(title: Text("-Set up board on machine", style: Theme.of(context).textTheme.display2),
           children: <Widget>[
             ExpansionTile(title: Text("-Pay attention to distortions", style: Theme.of(context).textTheme.display3),

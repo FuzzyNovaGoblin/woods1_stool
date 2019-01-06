@@ -23,7 +23,7 @@ class Step22PageState extends State
         ExpansionTile(title: Text("-Self Reflect on your progress with the provided project rubric", style: Theme.of(context).textTheme.display1),
         children: <Widget>[
           ListTile(title: Text("-Circle what you think you deserve – READ IT Carefully!", style: Theme.of(context).textTheme.display2)),
-          ImageThing("assets/10.PNG")
+          ImageThing("assets/10.jpg")
         ],),
         ExpansionTile(title: Text("-Write a self reflection on your process", style: Theme.of(context).textTheme.display1),
         children: <Widget>[

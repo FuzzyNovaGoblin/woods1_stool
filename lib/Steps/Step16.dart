@@ -25,7 +25,7 @@ class Step16PageState extends State
           ListTile(title: Text("-Be sure to set up document properly", style: Theme.of(context).textTheme.display1)),
           ListTile(title: Text("-Be sure to double check printer settings for Laser Engraver", style: Theme.of(context).textTheme.display1)),
         ],),
-        ImageThing("assets/IMG_0127.JPG"),
+        ImageThing("assets/IMG_0127.jpg"),
        
       ],
     );

@@ -23,7 +23,7 @@ class Step14PageState extends State
         CheckBoxThing(checkValue: CheckValue.sandersDone),
         ListTile(title: Text("-Sand the pieces you have so they can be assembled", style: Theme.of(context).textTheme.display1)),
         ListTile(title: Text("-Choose the proper sander for the proper job", style: Theme.of(context).textTheme.display1)),
-        ImageThing("assets/IMG_0134.JPG"),
+        ImageThing("assets/IMG_0134.jpg"),
         
       ],
     );

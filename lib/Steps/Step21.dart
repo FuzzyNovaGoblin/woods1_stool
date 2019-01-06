@@ -32,7 +32,7 @@ class Step21PageState extends State
             ListTile(title: Text("-Pen", style: Theme.of(context).textTheme.display2)),
           ],)
         ],),
-        ImageThing("assets/cropedName.JPG"),
+        ImageThing("assets/cropedName.jpg"),
         
       ],
     );

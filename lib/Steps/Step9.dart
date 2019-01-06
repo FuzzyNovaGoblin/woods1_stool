@@ -32,7 +32,7 @@ class Step9PageState extends State
             ],),
           ],),
         ],),
-        ImageThing("assets/IMG_0049.JPG"),
+        ImageThing("assets/IMG_0049.jpg"),
         
       ],
     );

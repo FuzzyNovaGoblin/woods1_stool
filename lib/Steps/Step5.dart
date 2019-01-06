@@ -33,7 +33,7 @@ class Step5PageState extends State
         //part 1
         ExpansionTile(title: Text("-The bill of materials includes:", style: Theme.of(context).textTheme.display1,),
         children: <Widget>[
-          ImageThing("assets/6.PNG"),
+          ImageThing("assets/6.jpg"),
           ExpansionTile(title: Text("-A list of Materials/tools needed", style: Theme.of(context).textTheme.display2,),
           children: <Widget>[
             ExpansionTile(title: Text("-This includes:", style: Theme.of(context).textTheme.display3,),
@@ -48,7 +48,7 @@ class Step5PageState extends State
 
         ExpansionTile(title: Text("-Board Foot Calculation of Wood needed (includes costs)", style: Theme.of(context).textTheme.display1,),
           children: <Widget>[
-            RotatedBox(child: ImageThing("assets/bill2-3.PNG"),quarterTurns: 3,),
+            RotatedBox(child: ImageThing("assets/bill2-3.jpg"),quarterTurns: 3,),
             ExpansionTile(title: Text("-To complete your board foot calculation you will need your parts list for the wood you need only (this doesn’t include the one for screws, ect.)", style: Theme.of(context).textTheme.display2,),
               children: <Widget>[
                 ExpansionTile(title: Text.rich( TextSpan(text: "-First calculate the board foot for what your finished pieces would be. ",children: [TextSpan(text: "Round UP to second decimal place!", style: TextStyle(fontWeight: FontWeight.bold))]), style: Theme.of(context).textTheme.display3,),
@@ -77,7 +77,7 @@ class Step5PageState extends State
         //part 3
         ExpansionTile(title: Text("-Now you would need to create a board layout on paper to do the next part", style: Theme.of(context).textTheme.display1,),
         children: <Widget>[
-          ImageThing("assets/7.PNG"),
+          ImageThing("assets/7.jpg"),
           ListTile(title: Text("-In order to do this you need to go find a board and get a common width (just in case it isn’t there when you get to cut, there will be a board the same size around for you to use)", style: Theme.of(context).textTheme.display2,)),
           ExpansionTile(title: Text("-Draw out a board and figure out how long the board will need to be for you to use", style: Theme.of(context).textTheme.display2,),
           children: <Widget>[
@@ -95,7 +95,7 @@ class Step5PageState extends State
         children: <Widget>[
           ListTile(title: Text("-Subtract the Rough lumber total cost from the finished lumber total cost.", style: Theme.of(context).textTheme.display2,)),
           ListTile(title: Text("-Try and see if you can figure out what the percent of waste is…", style: Theme.of(context).textTheme.display2,)),
-          RotatedBox(child: ImageThing("assets/bill4-4.PNG"), quarterTurns: 3,),
+          RotatedBox(child: ImageThing("assets/bill4-4.jpg"), quarterTurns: 3,),
         ],),
       
         

@@ -34,7 +34,7 @@ class IntroPageState extends State
               ],
             ),
           ),
-          ImageThing("assets/stool.JPG"),
+          ImageThing("assets/stool.jpg"),
         ],
       ),
 //      child: Column(

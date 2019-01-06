@@ -48,7 +48,7 @@ class Step3PageState extends State
             ListTile(title: Text("-Such as screws and plugs", style: Theme.of(context).textTheme.display2)),
           ],
         ),
-        ImageThing("assets/4.PNG"),
+        ImageThing("assets/4.jpg"),
       ],
     );
   }

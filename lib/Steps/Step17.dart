@@ -40,14 +40,14 @@ class Step17PageState extends State
               ListTile(title: Text("-NOT ALL THE WAY THROUGH THE BOARD!", style: Theme.of(context).textTheme.display1,))
             ],),
           ],),
-          ImageThing("assets/IMG_0111.jpg")
+          RotatedBox(quarterTurns:2,child: ImageThing("assets/IMG_0111.jpg"))
         ],),
 
         //part 2 layout
         CheckBoxThing(checkValue: CheckValue.drillPressDone_layout),
         ExpansionTile(title: Text("Layout out Board – Find Center Points", style: Theme.of(context).textTheme.title,),children: <Widget>[
-          ImageThing("assets/IMG_0094.jpg"),
-          ImageThing("assets/IMG_0098.jpg"),
+          RotatedBox(quarterTurns: 1,child: ImageThing("assets/IMG_0094.jpg")),
+          RotatedBox(quarterTurns: 1,child: ImageThing("assets/IMG_0098.jpg")),
           ImageThing("assets/IMG_0100.jpg"),
         ],),
 
@@ -62,7 +62,7 @@ class Step17PageState extends State
 //              ImageThing("assets/IMG_0111.JPG"),
               Padding(padding: EdgeInsets.all(8.0),)
             ],),
-            ImageThing("assets/IMG_0158.jpg"),
+            RotatedBox(quarterTurns: 2,child: ImageThing("assets/IMG_0158.jpg")),
             ImageThing("assets/IMG_0206.jpg"),
             ImageThing("assets/IMG_0207.jpg"),
             ImageThing("assets/IMG_0210.jpg"),

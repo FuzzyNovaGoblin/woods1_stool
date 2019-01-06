@@ -25,7 +25,7 @@ class Step20PageState extends State
           ListTile(title: Text("-Suggestion to put finishing nails onto a board so the board can sit on it while drying and not get stuck to anything on table, ect.", style: Theme.of(context).textTheme.display2))
         ],),
         ImageThing("assets/IMG_0138.jpg"),
-        ImageThing("assets/IMG_0137.jpg"),
+        RotatedBox(quarterTurns: 1,child: ImageThing("assets/IMG_0137.jpg")),
         
       ],
     );

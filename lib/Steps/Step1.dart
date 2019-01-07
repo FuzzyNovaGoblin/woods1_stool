@@ -21,7 +21,7 @@ class Step1PageState extends State
       children: <Widget>[
         CheckBoxThing(checkValue: CheckValue.sketchesDone),
         ListTile(title: Text("-Brainstorm sketches", style: Theme.of(context).textTheme.display1),),
-        ListTile(title: Text("-You can change the color, the arch style, the top iamge/style but not change the dimensions or structure of the stool.", style: Theme.of(context).textTheme.display1,),),
+        ListTile(title: Text("-You can change the color, the arch style, the top image/style but not change the dimensions or structure of the stool.", style: Theme.of(context).textTheme.display1,),),
         ExpansionTile(
           title: Text("-You need 10 sketches", style: Theme.of(context).textTheme.display1),
           children: <Widget>[

@@ -81,9 +81,9 @@ class Step5PageState extends State
           ListTile(title: Text("-In order to do this you need to go find a board and get a common width (just in case it isn’t there when you get to cut, there will be a board the same size around for you to use)", style: Theme.of(context).textTheme.display2,)),
           ExpansionTile(title: Text("-Draw out a board and figure out how long the board will need to be for you to use", style: Theme.of(context).textTheme.display2,),
           children: <Widget>[
-            ExpansionTile(title: Text("-Your aim is to have all the pieces needed but have the least about of waist", style: Theme.of(context).textTheme.display3,),
+            ExpansionTile(title: Text("-Your aim is to have all the pieces needed but have the least about of waste", style: Theme.of(context).textTheme.display3,),
             children: <Widget>[
-              ListTile(title: Text("-Waist is the wood that is being cut off or unused portions of the board", style: Theme.of(context).textTheme.display4,)),
+              ListTile(title: Text("-Waste is the wood that is being cut off or unused portions of the board", style: Theme.of(context).textTheme.display4,)),
               ListTile(title: Text("-Don’t forget to include that ¼” – ½” will most likely be removed from your board when making the edges straight (not rough anymore)", style: Theme.of(context).textTheme.display4,)),
             ],)
           ],),
@@ -91,7 +91,7 @@ class Step5PageState extends State
   
     //part 4
         ListTile(title: Text("-Calculate your Rough lumber board foot the same way you did the finished lumber section.", style: Theme.of(context).textTheme.display1,)),
-        ExpansionTile(title: Text("-Calculate your waist", style: Theme.of(context).textTheme.display1,),
+        ExpansionTile(title: Text("-Calculate your waste", style: Theme.of(context).textTheme.display1,),
         children: <Widget>[
           ListTile(title: Text("-Subtract the Rough lumber total cost from the finished lumber total cost.", style: Theme.of(context).textTheme.display2,)),
           ListTile(title: Text("-Try and see if you can figure out what the percent of waste is…", style: Theme.of(context).textTheme.display2,)),
